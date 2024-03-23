@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export default function NavBar() {
-    // const { user, username } = {};
-    const user = true,
-        username = true;
+    const { user, username } = {};
+    // const user = true,
+    //     username = true;
 
     return (
         <nav className="navbar flex-none">
