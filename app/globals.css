@@ -8,7 +8,8 @@
     --background-end-rgb: 255, 255, 255;
     --color-bg: #4f4f4f97;
     --color-blue: #1e90ff;
-    --color-text: #08090a;
+    --color-text: #ffffff;
+    --color-text-logo: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,8 +17,8 @@
         --foreground-rgb: 255, 255, 255;
         --background-start-rgb: 0, 0, 0;
         --background-end-rgb: 0, 0, 0;
-        --color-text: #ffffff;
-        --color-text-logo: black;
+        --color-text: #000000;
+        --color-text-logo: #ffffff;
     }
 }
 
