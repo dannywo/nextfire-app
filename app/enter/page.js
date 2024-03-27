@@ -20,17 +20,10 @@ export default function Enter(props) {
     )
 }
 
-const testEnv = () => {
-    console.log('Inside Test Env');
-    console.log(process.env.FIREBASE_API_KEY);
-}
-
 // Sign-in with Google button
 function SignInButton() {
     const signInWithGoogle = async () => {
-        console.log(await process.env.FIREBASE_API_KEY);
-
-        // await auth.signInWithPoppUp(googleAuthProvider);
+        await signInWithPoppUp(googleAuthProvider);
         await console.log("Clicked");
     }
 
@@ -38,9 +31,6 @@ function SignInButton() {
         <>
             <button className="btn-google" onClick={signInWithGoogle}>
                 <img src={'/google.png'} alt="Google Sign In Image" /> Sign In with Google
-            </button>
-            <button className="btn-google" onClick={testEnv}>
-                <img src={'/vercel.svg'} alt="" /> Test ENV
             </button>
         </>
     )
