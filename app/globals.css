@@ -116,7 +116,7 @@ button.btn-green {
 
 button.btn-google {
     background-color: white;
-    color: var(--color-text);
+    color: var(--color-text-logo);
 }
 
 .btn-google img {
